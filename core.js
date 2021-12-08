@@ -1,4 +1,3 @@
-
 /*
 TODO migliorativi :)
 - menu a tendina nella zelezione dei tipi
@@ -57,12 +56,12 @@ function addDOM(node, list) {
 function removeDOM() {
     
 
-    document.getElementById("VW").innerHTML = "Very weaknes: ";
-    document.getElementById("W").innerHTML = "Weaknes: ";
-    document.getElementById("VR").innerHTML = "Very resistence: ";
-    document.getElementById("R").innerHTML = "Resistence: ";
-    document.getElementById("I").innerHTML = "Immunity: ";
-    document.getElementById("N").innerHTML = "Normal: ";
+    document.getElementById("VW").innerHTML = "";
+    document.getElementById("W").innerHTML = "";
+    document.getElementById("VR").innerHTML = "";
+    document.getElementById("R").innerHTML = "";
+    document.getElementById("I").innerHTML = "";
+    document.getElementById("N").innerHTML = "";
 }
 
 function normList(VW, W, VR, R, I) {
@@ -113,6 +112,8 @@ function normList(VW, W, VR, R, I) {
 
     return ret;
 }
+
+
 
 document.getElementById("go").onclick = function (){
     console.log("on");
@@ -202,8 +203,6 @@ document.getElementById("go").onclick = function (){
     if(doSearch2 != undefined){
         n2 = doSearch2.getName();
     }
-    app.appendChild(document.createTextNode(n1 +" "+ n2));
-    console.log(app);
 };
 
 document.getElementById("reset").onclick = function(){
