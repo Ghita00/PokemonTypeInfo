@@ -54,8 +54,6 @@ function addDOM(node, list) {
 }
 
 function removeDOM() {
-    
-
     document.getElementById("VW").innerHTML = "";
     document.getElementById("W").innerHTML = "";
     document.getElementById("VR").innerHTML = "";
