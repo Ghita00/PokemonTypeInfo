@@ -3,45 +3,6 @@ TODO migliorativi :)
 - menu a tendina nella zelezione dei tipi
 - storico risultati ricercati
 */ 
-let normal = new PokeType("normal", [], ["fight"], ["ghost"]);
-let fire = new PokeType("fire", ["fire", "grass", "ice", "bug", "steel", "fairy"], ["water", "ground", "rock"], []);
-let water = new PokeType("water", ["fire", "water", "ice", "steel"], ["grass", "electr",], []);
-let grass = new PokeType("grass", ["water", "grass", "electr", "ground"], ["fire", "ice", "poison", "flying", "bug"], []);
-let electr = new PokeType("electr", ["electr", "flying", "steel"], ["ground"], []);
-let ice = new PokeType("ice", ["ice"], ["fire", "fight", "rock", "steel"], []);
-let fight = new PokeType("fight", ["colettero", "rock", "dark"], ["flying", "psychc", "fairy"], []);
-let poison = new PokeType("poison", ["grass", "fight", "poison", "bug", "fairy"], ["ground", "psychc"], []);
-let ground = new PokeType("ground", ["poison", "bug"], ["water", "grass", "ice"], ["electr"]);
-let flying = new PokeType("flying", ["grass", "fight", "bug"], ["electr", "ice", "rock"], ["ground"]);
-let psychc = new PokeType("psychc", ["fight", "psychc"], ["bug", "ghost", "dark"], []);
-let bug = new PokeType("bug", ["grass", "fight", "ground"], ["fire", "flying", "rock"], []);
-let rock = new PokeType("rock", ["normal", "fire", "poison", "flying"], ["water", "grass", "fight", "ground"], []);
-let ghost = new PokeType("ghost", ["poison", "bug"], ["ghost", "dark"], ["normal", "fight"]);
-let dragon = new PokeType("dragon", ["fire", "grass", "water", "electr"], ["ice", "dragon", "fairy"], []);
-let dark = new PokeType("dark", ["ghost", "dark"], ["fight", "bug", "fairy"], ["psychc"]);
-let steel = new PokeType("steel",["normal", "flying", "rock", "bug", "steel", "grass","psychc", "ice", "dragon","fairy"], ["fight", "ground", "fire"], ["poison"]);
-let fairy = new PokeType("fairy", ["fight", "bug", "dark"], ["poison", "steel"], ["dragon"]);
-
-let map = {
-    "normal" : normal,
-    "fire" : fire,
-    "water" : water,
-    "grass" : grass,
-    "electr" : electr,
-    "ice" : ice,
-    "fight" : fight,
-    "poison" : poison,
-    "ground" : ground,
-    "flying" : flying,
-    "psychc" : psychc,
-    "bug" : bug,
-    "rock" : rock,
-    "ghost" : ghost,
-    "dragon" : dragon,
-    "dark" : dark,
-    "steel" : steel,
-    "fairy" : fairy
-}  
 
 function addDOM(node, list) {
     for(let i = 0; i < list.length; i++){
